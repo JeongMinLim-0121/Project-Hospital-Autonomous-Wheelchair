@@ -4,10 +4,8 @@
 
 > **요약**  
 > TurtleBot3 Burger 플랫폼에 3D 프린팅 휠체어 구조물을 장착하고,  
-> **LiDAR SLAM 기반 자율주행(ROS2/Nav2)** + **중앙 서버/DB 배차 시스템** + **Qt 터치 키오스크(외래 호출)** + **STM32U5(초음파/압력 + Touch-GFX UI)** 를 결합해  
-> 병원 환경에서 **환자 호출 → 탑승 확인 → 목적지 이동 → 도착 알림 → 하차/대기/충전** 흐름을 구현하는 프로젝트입니다.
->
-> Youtube 영상 : https://youtu.be/OP_KvQtHlb4
+> **LiDAR SLAM 기반 자율주행(ROS2/Nav2)** + **중앙 서버/DB 배차 시스템** + **Qt 터치 키오스크(외래 호출)** + **STM32U5(초음파/압력 + Touch-GFX UI)** 를 결합해 병원 환경에서 **환자 호출 → 탑승 확인 → 목적지 이동 → 도착 알림 → 하차/대기/충전** 흐름을 구현하는 프로젝트입니다.  
+ 
 
 ---
 
@@ -21,6 +19,8 @@
   - LiDAR가 감지하기 어려운 **낮은 높이 장애물**을 초음파로 감지
   - **압력 센서**로 환자 탑승/하차를 감지하여 서버/DB에 반영
   - 보드 내장 **Touch-GFX**에서 로봇 상태/토픽값을 실시간 UI로 표시
+
+
 
 ---
 
@@ -260,51 +260,7 @@ STM32U5에 연결된 센서를 통해 ROS2로 전송하여 **추가 토픽을 �
 
 
 ---
-
-## 🧰 8. 기술 스택
-
-<div align="center">
-
-<!-- UI -->
-<img src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" />
-
-<br/>
-
-<!-- Backend -->
-<img src="https://img.shields.io/badge/Socket-374151?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-
-<br/>
-
-<!-- Core -->
-<img src="https://img.shields.io/badge/ROS2-0A0FF9?style=for-the-badge&logo=ros&logoColor=white" />
-<img src="https://img.shields.io/badge/Nav2-0B7285?style=for-the-badge&logo=robotframework&logoColor=white" />
-<img src="https://img.shields.io/badge/SLAM-2F9E44?style=for-the-badge&logo=semantic-release&logoColor=white" />
-
-<br/>
-
-<!-- Hardware -->
-<img src="https://img.shields.io/badge/Raspberry%20Pi-4-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" />
-<img src="https://img.shields.io/badge/STM32U5G9J--DK2-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white" />
-<img src="https://img.shields.io/badge/TouchGFX-6D28D9?style=for-the-badge&logoColor=white" />
-
-<br/>
-
-
-</div>
-
----
-
-## 👥9. 팀원 소개 
-
-| &nbsp;&nbsp;&nbsp;&nbsp;이름&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;역할&nbsp;&nbsp;&nbsp;&nbsp; | 파트 | 담당 기능(요약) | 사용 기술/도구 |
-| :---: | :---: | :--- | :--- | :--- |
-| **허진경** | 팀장 | Robot / ROS | TurtleBot3 자율주행(ROS2/Nav2/SLAM) 통합| ROS2, Nav2, SLAM |
-| **강송구** | 부팀장 | Server / DB / Qt / Touch-GFX | C 서버 구현, MariaDB 스키마/쿼리 설계,<br>로봇 상태 저장/배차 로직, ROS 토픽 → Touch-GFX UI 표시 | C(Socket), MariaDB / MySQL, Touch-GFX(STM32) |
-| **김선곤** | 팀원 | Qt / Touch-GFX | Qt UI 디자인 전체 구현 <br>STM32U5 Touch-GFX UI 구현 | Qt, Touch-GFX(STM32) |
-| **임정민** | 팀원 | DB / ROS | DB 데이터 관리/정리, URDF | MariaDB /ROS2 |
-| **유종민** | 팀원 | Firmware /ROS | STM32U5(초음파/압력) 센서 구현 및<br>ROS2 연동, 3D 프린팅 구조물 제작 | ROS2, STM32,Fusion 360 |
+ 
 
 
 
