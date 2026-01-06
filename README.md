@@ -18,6 +18,7 @@
  
 ---
 ## 🎬 2. 자율주행 휠체어 시연 영상
+*Nav2 기반 경로 이동, 호출 배차부터 도착까지 전체 흐름을 보여주는 데모 영상입니다.*
 >  https://github.com/user-attachments/assets/8a61449f-51c5-4cb4-b58b-52134d1384b4
 
 ---
@@ -179,8 +180,6 @@ STM32U5에 연결된 센서를 통해 ROS2로 전송하여 **추가 토픽을 �
  ## 🧩 6. 기술 요약
 - UI        : Qt
 - Robot     : ROS2, SLAM, AMCL, Nav2
-- Hardware  : TurtleBot3, STM32
-- Server    : TCP(C)
 - Database  : MariaDB
 - Simulation: Gazebo
 
