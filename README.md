@@ -169,9 +169,18 @@ STM32U5에 연결된 센서를 통해 ROS2로 전송하여 **추가 토픽을 �
    
 <img width="802" height="584" alt="image" src="https://github.com/user-attachments/assets/fb9f6af5-0ed8-4555-b5ec-a6c7ca96ab85" />
 
-
 ---
- ## 🧩 6. 기술 요약
+
+## 🛠 6. 구현 상세
+
+- STM32U5를 ROS2 상위 제어와 분리된 하위 제어 계층으로 구현
+- 초음파·FSR 센서를 MCU에서 직접 처리하여 이벤트 상태를 생성
+- UART 기반 커스텀 메시지 포맷으로 STM32–ROS 간 상태 및 센서 데이터 동기화
+- ROS2 노드는 센서 결과 토픽을 수신하여 주행 로직에서 활용
+- 미션 매니저 노드에서 Nav2 goal cancel 등 제어 명령을 사용
+- 다중 로봇 환경을 고려해 hostname 기반 토픽 및 제어 구조 적용
+---
+ ## 🧩 7. 기술 요약
 - UI        : Qt
 - Robot     : ROS2, SLAM, AMCL, Nav2
 - Database  : MariaDB
