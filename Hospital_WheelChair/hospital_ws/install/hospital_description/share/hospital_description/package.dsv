@@ -1,8 +1,0 @@
-source;share/hospital_description/hook/cmake_prefix_path.ps1
-source;share/hospital_description/hook/cmake_prefix_path.dsv
-source;share/hospital_description/hook/cmake_prefix_path.sh
-source;share/hospital_description/local_setup.bash
-source;share/hospital_description/local_setup.dsv
-source;share/hospital_description/local_setup.ps1
-source;share/hospital_description/local_setup.sh
-source;share/hospital_description/local_setup.zsh

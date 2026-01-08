@@ -1,1 +1,0 @@
-/home/ubuntu/project/Project-Hospital-Autonomous-Wheelchair/Hospital_WheelChair/hospital_ws/build/hospital_description/ament_cmake_environment_hooks/local_setup.zsh
